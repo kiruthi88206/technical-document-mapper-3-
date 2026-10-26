@@ -1,0 +1,38 @@
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+*.egg
+.pytest_cache/
+
+# Databases & User Uploads / Exports
+instance/
+backend/instance/
+uploads/
+backend/uploads/
+exports/
+backend/exports/
+*.db
+*.sqlite
+*.sqlite3
+
+# Node & Frontend
+node_modules/
+frontend/node_modules/
+.npm
+npm-debug.log*
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Document Terminology & Concept Relationship Mapper</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Vis.js Network CDN -->
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="dark-theme">
+    <div class="app-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-diagram-project"></i>
+                </div>
+                <div class="brand-text">
+                    <h2>DocMapper</h2>
+                    <span>Concept Graph AI</span>
+                </div>
+            </div>
+
+            <nav class="nav-menu">
+                <button class="nav-item active" data-tab="dashboard-view">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <span>Knowledge Graph</span>
+                </button>
+                <button class="nav-item" data-tab="upload-view">
+                    <i class="fa-solid fa-file-arrow-up"></i>
+                    <span>Document Upload</span>
+                </button>
+                <button class="nav-item" data-tab="glossary-view">
+                    <i class="fa-solid fa-book-bookmark"></i>
+                    <span>Structured Glossary</span>
+                </button>
+                <button class="nav-item" data-tab="library-view">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span>Document Library</span>
+                </button>
+                <button class="nav-item" data-tab="export-view">
+                    <i class="fa-solid fa-file-export"></i>
+                    <span>Reports & Export</span>
+                </button>
+            </nav>
+
+            <div class="sidebar-status">
+                <div class="status-indicator">
+                    <span class="status-dot online" id="system-status-dot"></span>
+                    <span class="status-label" id="system-status-text">MongoDB Ready</span>
+                </div>
+                <div class="nlp-badge" id="nlp-model-badge">
+                    <i class="fa-solid fa-brain"></i> NLP Engine Active
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header Bar -->
+            <header class="top-header">
+                <div class="header-left">
+                    <div class="page-title-area">
+                        <h1 id="page-title">Technical Document Knowledge Graph</h1>
+                        <span class="current-doc-badge" id="active-doc-badge">
+                            <i class="fa-regular fa-file-lines"></i> No Document Selected
+                        </span>
+                    </div>
+                </div>
+
+                <div class="header-center">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="global-search-input" placeholder="Search concepts, terms, or relations...">
+                        <button class="search-clear-btn" id="search-clear-btn" style="display:none;">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="header-right">
+                    <button class="btn btn-secondary btn-sm" id="btn-quick-samples">
+                        <i class="fa-solid fa-flask"></i> Demo Samples
+                    </button>
+                    <button class="btn btn-primary btn-sm" id="btn-export-quick">
+                        <i class="fa-solid fa-download"></i> Export Report
+                    </button>
+                </div>
+            </header>
+
+            <!-- Dashboard Content Container -->
+            <div class="content-body">
+                <!-- Summary Metrics Cards -->
+                <section class="metrics-row">
+                    <div class="metric-card">
+                        <div class="metric-icon indigo">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+                        <div class="metric-details">
+                            <span class="metric-title">Active Document</span>
+                            <h3 class="metric-value text-truncate" id="metric-doc-name">--</h3>
+                            <span class="metric-sub" id="metric-doc-words">0 words / 0 sentences</span>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-icon sky">
+                            <i class="fa-solid fa-tags"></i>
+                        </div>
+                        <div class="metric-details">
+                            <span class="metric-title">Concepts Identified</span>
+                            <h3 class="metric-value" id="metric-concepts-count">0</h3>
+                            <span class="metric-sub" id="metric-categories-count">0 Categories Ranked</span>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-icon emerald">
+                            <i class="fa-solid fa-route"></i>
+                        </div>
+                        <div class="metric-details">
+                            <span class="metric-title">Relationships Mapped</span>
+                            <h3 class="metric-value" id="metric-relations-count">0</h3>
+                            <span class="metric-sub" id="metric-relation-types">Syntactic & Semantic</span>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-icon amber">
+                            <i class="fa-solid fa-circle-nodes"></i>
+                        </div>
+                        <div class="metric-details">
+                            <span class="metric-title">Central Concept Hub</span>
+                            <h3 class="metric-value text-truncate" id="metric-hub-name">--</h3>
+                            <span class="metric-sub" id="metric-graph-density">Density: 0.00</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- TAB 1: KNOWLEDGE GRAPH VIEW (MAIN DASHBOARD FOCUS) -->
+                <div class="tab-pane active" id="dashboard-view">
+                    <div class="graph-main-wrapper">
+                        <!-- Canvas Container -->
+                        <div class="graph-canvas-container">
+                            <!-- Floating Graph Toolbar -->
+                            <div class="graph-floating-toolbar">
+                                <div class="toolbar-group">
+                                    <button class="tool-btn" id="btn-zoom-in" title="Zoom In">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                    <button class="tool-btn" id="btn-zoom-out" title="Zoom Out">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </button>
+                                    <button class="tool-btn" id="btn-zoom-fit" title="Fit to Screen">
+                                        <i class="fa-solid fa-expand"></i>
+                                    </button>
+                                    <button class="tool-btn" id="btn-reset-layout" title="Reset View">
+                                        <i class="fa-solid fa-rotate-right"></i>
+                                    </button>
+                                </div>
+                                <div class="toolbar-divider"></div>
+                                <div class="toolbar-group">
+                                    <button class="tool-btn" id="btn-toggle-physics" title="Toggle Physics Simulation">
+                                        <i class="fa-solid fa-atom"></i>
+                                    </button>
+                                    <button class="tool-btn" id="btn-toggle-hierarchy" title="Toggle Hierarchical Mode">
+                                        <i class="fa-solid fa-sitemap"></i>
+                                    </button>
+                                    <button class="tool-btn" id="btn-capture-png" title="Download Graph as PNG">
+                                        <i class="fa-solid fa-camera"></i>
+                                    </button>
+                                </div>
+                                <div class="toolbar-divider"></div>
+                                <div class="toolbar-group">
+                                    <button class="tool-btn primary" id="btn-open-add-node" title="Add Custom Concept Node">
+                                        <i class="fa-solid fa-circle-plus"></i> Add Concept
+                                    </button>
+                                    <button class="tool-btn" id="btn-open-add-edge" title="Add Relationship Link">
+                                        <i class="fa-solid fa-link"></i> Add Link
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Category Legend -->
+                            <div class="graph-legend">
+                                <span class="legend-title">Categories:</span>
+                                <span class="legend-badge badge-indigo"><span class="dot"></span> Models & Algorithms</span>
+                                <span class="legend-badge badge-sky"><span class="dot"></span> Data & Representations</span>
+                                <span class="legend-badge badge-emerald"><span class="dot"></span> Architecture</span>
+                                <span class="legend-badge badge-pink"><span class="dot"></span> Methods</span>
+                                <span class="legend-badge badge-amber"><span class="dot"></span> Core Concepts</span>
+                            </div>
+
+                            <!-- Graph Loading Overlay -->
+                            <div class="graph-overlay" id="graph-loading-overlay">
+                                <div class="spinner-box">
+                                    <div class="spinner-ring"></div>
+                                    <h4 id="loading-message">Ready to Visualize</h4>
+                                    <p id="loading-submessage">Upload a technical document or load a demo sample to generate the knowledge graph.</p>
+                                    <div class="quick-demo-actions">
+                                        <button class="btn btn-primary btn-sm" onclick="App.loadSample('nlp_architecture')">
+                                            <i class="fa-solid fa-bolt"></i> Load NLP Architecture Demo
+                                        </button>
+                                        <button class="btn btn-secondary btn-sm" onclick="App.loadSample('microservices')">
+                                            <i class="fa-solid fa-server"></i> Load Cloud Microservices Demo
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Vis.js Knowledge Graph Canvas -->
+                            <div id="vis-network-canvas"></div>
+                        </div>
+
+                        <!-- Side Inspector Panel for Selected Node -->
+                        <aside class="concept-inspector" id="concept-inspector">
+                            <div class="inspector-header">
+                                <div class="inspector-title">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <span>Concept Inspector</span>
+                                </div>
+                                <button class="close-inspector-btn" id="btn-close-inspector">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+
+                            <div class="inspector-body" id="inspector-content">
+                                <div class="empty-inspector">
+                                    <i class="fa-solid fa-mouse-pointer"></i>
+                                    <p>Click any concept node in the graph to inspect definition, TF-IDF ranking, source citations, and relations.</p>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+
+                <!-- TAB 2: DOCUMENT UPLOAD & INGESTION -->
+                <div class="tab-pane" id="upload-view">
+                    <div class="upload-container">
+                        <div class="upload-card">
+                            <div class="card-header">
+                                <h2><i class="fa-solid fa-cloud-arrow-up"></i> Technical Document Ingestion</h2>
+                                <p>Upload technical manuals, whitepapers, specs, or research papers in PDF, DOCX, or TXT format.</p>
+                            </div>
+
+                            <div class="drop-zone" id="document-drop-zone">
+                                <input type="file" id="file-input" accept=".pdf,.docx,.txt" style="display:none;">
+                                <div class="drop-zone-content">
+                                    <div class="upload-icon-wrapper">
+                                        <i class="fa-solid fa-file-code"></i>
+                                    </div>
+                                    <h3>Drag & Drop Technical Document Here</h3>
+                                    <p>or click to browse from your computer</p>
+                                    <div class="format-badges">
+                                        <span class="badge">PDF</span>
+                                        <span class="badge">DOCX</span>
+                                        <span class="badge">TXT</span>
+                                        <span class="badge">Max 25 MB</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Selected File Staging Card -->
+                            <div class="file-staging-card" id="file-staging-card" style="display:none;">
+                                <div class="file-meta">
+                                    <i class="fa-solid fa-file-lines file-type-icon"></i>
+                                    <div class="file-details">
+                                        <h4 id="staged-file-name">filename.pdf</h4>
+                                        <span id="staged-file-size">1.2 MB</span>
+                                    </div>
+                                </div>
+                                <div class="file-actions">
+                                    <button class="btn btn-secondary btn-sm" id="btn-cancel-file">Remove</button>
+                                    <button class="btn btn-primary" id="btn-process-file">
+                                        <i class="fa-solid fa-brain"></i> Extract & Map Relationships
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Quick Direct Text Box Option -->
+                            <div class="text-paste-section">
+                                <div class="section-divider">
+                                    <span>OR PASTE TECHNICAL TEXT DIRECTLY</span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="paste-doc-title" class="form-input" placeholder="Document Title (e.g., Quantum Computing Architecture)">
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="paste-doc-text" class="form-textarea" rows="6" placeholder="Paste technical abstract, document excerpt, or architectural specification here..."></textarea>
+                                </div>
+                                <button class="btn btn-secondary" id="btn-analyze-pasted">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i> Analyze Pasted Content
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Sample Documents Card -->
+                        <div class="samples-card">
+                            <h3><i class="fa-solid fa-book-open"></i> Pre-Loaded Demonstration Samples</h3>
+                            <p>Instantly evaluate the system using curated computer science papers with diverse relationship structures.</p>
+                            
+                            <div class="sample-items-list">
+                                <div class="sample-item" onclick="App.loadSample('nlp_architecture')">
+                                    <div class="sample-icon">
+                                        <i class="fa-solid fa-brain"></i>
+                                    </div>
+                                    <div class="sample-info">
+                                        <h4>Deep Learning & NLP Architecture</h4>
+                                        <p>Transformers, Attention Mechanisms, TF-IDF, Vector Embeddings, BERT, Knowledge Graphs.</p>
+                                    </div>
+                                    <button class="btn btn-outline btn-xs">Load Sample</button>
+                                </div>
+
+                                <div class="sample-item" onclick="App.loadSample('microservices')">
+                                    <div class="sample-icon">
+                                        <i class="fa-solid fa-network-wired"></i>
+                                    </div>
+                                    <div class="sample-info">
+                                        <h4>Cloud Microservices & Distributed Architecture</h4>
+                                        <p>API Gateway, Docker, Kubernetes, Service Mesh, Redis Cache, Event-Driven Queue.</p>
+                                    </div>
+                                    <button class="btn btn-outline btn-xs">Load Sample</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 3: STRUCTURED GLOSSARY -->
+                <div class="tab-pane" id="glossary-view">
+                    <div class="glossary-header-bar">
+                        <div class="glossary-search-wrapper">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="glossary-search-input" placeholder="Filter terms in glossary...">
+                        </div>
+                        <div class="glossary-filter-pills" id="glossary-filter-pills">
+                            <button class="pill active" data-category="ALL">All Categories</button>
+                            <button class="pill" data-category="Models & Algorithms">Models & Algorithms</button>
+                            <button class="pill" data-category="Data & Representations">Data & Representations</button>
+                            <button class="pill" data-category="Architectures & Infrastructure">Architecture</button>
+                            <button class="pill" data-category="Techniques & Methods">Methods</button>
+                            <button class="pill" data-category="Core Concepts">Core Concepts</button>
+                        </div>
+                        <div class="glossary-actions">
+                            <button class="btn btn-secondary btn-sm" id="btn-download-glossary-csv">
+                                <i class="fa-solid fa-file-csv"></i> Export CSV
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="glossary-grid" id="glossary-items-container">
+                        <div class="empty-state">
+                            <i class="fa-solid fa-book-bookmark"></i>
+                            <h3>No Glossary Compiled Yet</h3>
+                            <p>Upload a document and run analysis to auto-generate a structured technical glossary.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 4: DOCUMENT LIBRARY -->
+                <div class="tab-pane" id="library-view">
+                    <div class="library-header-bar">
+                        <h2>Stored Documents Repository</h2>
+                        <button class="btn btn-primary btn-sm" onclick="App.switchTab('upload-view')">
+                            <i class="fa-solid fa-plus"></i> Upload New
+                        </button>
+                    </div>
+
+                    <div class="table-card">
+                        <table class="data-table" id="documents-table">
+                            <thead>
+                                <tr>
+                                    <th>Document Name</th>
+                                    <th>Format</th>
+                                    <th>Words</th>
+                                    <th>Concepts</th>
+                                    <th>Relationships</th>
+                                    <th>Uploaded</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="documents-table-body">
+                                <tr>
+                                    <td colspan="8" class="text-center">Loading document records...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- TAB 5: REPORTS & EXPORT -->
+                <div class="tab-pane" id="export-view">
+                    <div class="export-cards-grid">
+                        <div class="export-card">
+                            <div class="export-icon red">
+                                <i class="fa-solid fa-file-pdf"></i>
+                            </div>
+                            <h3>Comprehensive Academic PDF Report</h3>
+                            <p>Generate a structured multi-page PDF summarizing document metrics, extracted concepts, mapped relationships, and full glossary.</p>
+                            <button class="btn btn-primary" id="btn-generate-pdf">
+                                <i class="fa-solid fa-download"></i> Download PDF Report
+                            </button>
+                        </div>
+
+                        <div class="export-card">
+                            <div class="export-icon green">
+                                <i class="fa-solid fa-file-csv"></i>
+                            </div>
+                            <h3>Terminology Glossary CSV</h3>
+                            <p>Export the auto-generated structured glossary table with term definitions, categories, and source context excerpts.</p>
+                            <button class="btn btn-secondary" id="btn-export-csv-tab">
+                                <i class="fa-solid fa-download"></i> Download CSV
+                            </button>
+                        </div>
+
+                        <div class="export-card">
+                            <div class="export-icon blue">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h3>Knowledge Graph JSON</h3>
+                            <p>Export the raw nodes, edges, network metrics, and linguistic evidence for external graph processing in Neo4j, Gephi, or D3.</p>
+                            <button class="btn btn-secondary" id="btn-export-json">
+                                <i class="fa-solid fa-download"></i> Download JSON
+                            </button>
+                        </div>
+
+                        <div class="export-card">
+                            <div class="export-icon purple">
+                                <i class="fa-solid fa-image"></i>
+                            </div>
+                            <h3>High-Res Graph Canvas Image</h3>
+                            <p>Capture the interactive knowledge graph canvas as a high-resolution PNG image suitable for project presentation slides.</p>
+                            <button class="btn btn-secondary" id="btn-export-image-tab">
+                                <i class="fa-solid fa-camera"></i> Capture PNG Image
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- MODAL 1: ADD CUSTOM CONCEPT NODE -->
+    <div class="modal" id="modal-add-node">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3><i class="fa-solid fa-circle-plus"></i> Add Custom Concept Node</h3>
+                    <button class="modal-close" data-close="modal-add-node"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Concept Name</label>
+                        <input type="text" id="new-node-label" class="form-input" placeholder="e.g. Self-Attention">
+                    </div>
+                    <div class="form-group">
+                        <label>Category</label>
+                        <select id="new-node-category" class="form-select">
+                            <option value="Models & Algorithms">Models & Algorithms</option>
+                            <option value="Data & Representations">Data & Representations</option>
+                            <option value="Architectures & Infrastructure">Architectures & Infrastructure</option>
+                            <option value="Techniques & Methods">Techniques & Methods</option>
+                            <option value="Core Concepts">Core Concepts</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Definition / Context</label>
+                        <textarea id="new-node-definition" class="form-textarea" rows="3" placeholder="Enter brief technical definition..."></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="modal-add-node">Cancel</button>
+                    <button class="btn btn-primary" id="btn-submit-add-node">Add Node to Graph</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: ADD RELATIONSHIP EDGE -->
+    <div class="modal" id="modal-add-edge">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3><i class="fa-solid fa-link"></i> Add Relationship Link</h3>
+                    <button class="modal-close" data-close="modal-add-edge"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Source Concept</label>
+                        <select id="new-edge-source" class="form-select"></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Relationship Type</label>
+                        <select id="new-edge-label" class="form-select">
+                            <option value="uses">uses</option>
+                            <option value="depends_on">depends on</option>
+                            <option value="is_a">is a (hierarchy)</option>
+                            <option value="implements">implements</option>
+                            <option value="enables">enables</option>
+                            <option value="produces">produces</option>
+                            <option value="co_occurs_with">co-occurs with</option>
+                            <option value="semantically_similar">semantically similar</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Target Concept</label>
+                        <select id="new-edge-target" class="form-select"></select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="modal-add-edge">Cancel</button>
+                    <button class="btn btn-primary" id="btn-submit-add-edge">Create Relationship</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Application Scripts -->
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/graph.js"></script>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

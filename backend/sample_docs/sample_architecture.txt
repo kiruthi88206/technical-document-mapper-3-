@@ -1,0 +1,19 @@
+# Technical Architecture: Document Terminology & Knowledge Graph Extraction
+
+## Abstract
+Modern technical document comprehension relies heavily on Natural Language Processing (NLP) and Knowledge Graphs. Dense technical literature often obscures dependencies between concepts. This document details an end-to-end architecture that ingests unstructured technical documents, extracts technical terms and noun phrases, ranks them with TF-IDF and frequency analysis, detects relational semantics via co-occurrence and sentence embeddings, and stores the resulting concept network in Neo4j.
+
+## 1. Document Ingestion and Normalization
+The ingestion pipeline supports PDF, DOCX, and TXT files. Raw text is parsed using document extractors, stripping formatting noise, repairing hyphenated line breaks, and normalizing token streams. Preprocessing splits the corpus into discrete sentences and eliminates stopwords while preserving technical compound nouns and acronyms.
+
+## 2. Technical Term Extraction
+Domain-specific terms and named entities are identified using part-of-speech tagging and noun chunking via spaCy and NLTK. Significant concepts are ranked using TF-IDF (Term Frequency-Inverse Document Frequency) vectorization. High-ranking terms represent foundational domain concepts such as TF-IDF, Knowledge Graph, Semantic Similarity, and FastAPI.
+
+## 3. Relationship Detection Engine
+Concept dependencies stay implicit without relational analysis. The relationship detection module scans sentence co-occurrence to locate grammatical predicates such as 'uses', 'implements', 'connects to', and 'depends on'. Furthermore, sentence embeddings compute cosine similarity between technical terms to establish semantic similarity links. Concepts that appear in proximate contextual windows are linked to ensure comprehensive graph connectivity.
+
+## 4. Graph Construction and Neo4j Storage
+Extracted concepts are modeled as graph nodes, and detected relationships are represented as directed edges with confidence weights. Graph data is stored in the Neo4j graph database using parameterized Cypher queries. The database organizes Document nodes, Concept nodes, and RELATES_TO relationships. When a database cluster is offline, a local in-memory graph engine provides a seamless fallback.
+
+## 5. Interactive Visualization and User Experience
+The frontend is built with React.js and Tailwind CSS, utilizing vis-network.js and D3.js to render an explorable, force-directed Knowledge Graph. Users can zoom, pan, select nodes, search concepts, and inspect connected neighbors. An auto-generated glossary presents term definitions, frequency scores, and contextual excerpts. Documentation teams can export graph data as JSON, glossary entries as CSV, and download professional PDF reports.

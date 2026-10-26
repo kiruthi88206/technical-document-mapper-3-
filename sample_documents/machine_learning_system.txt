@@ -1,0 +1,14 @@
+Artificial Intelligence and Machine Learning Fundamentals
+
+1. Overview of Artificial Intelligence
+Artificial Intelligence is a broad branch of computer science focused on building smart machines capable of performing tasks that typically require human intelligence. Machine Learning is a field within Artificial Intelligence that empowers computers to learn and improve automatically from experience without explicit programming. Deep Learning is a type of Machine Learning based on artificial neural networks with multiple representation layers.
+
+2. Neural Network Architecture and Training
+A Neural Network is used in Deep Learning to approximate complex non-linear functions. Neural Network consists of an Input Layer, Hidden Layers, and an Output Layer. The Transformer Architecture implements Self-Attention to capture contextual dependencies across sequential tokens. Feature Extraction produces Vector Embeddings that represent semantic meaning in continuous vector space.
+
+Model Training uses a Training Dataset to optimize internal weight parameters through iterative backpropagation. Model Training requires a Loss Function to evaluate Model Performance by measuring prediction error. Optimization Algorithm updates model weights to minimize the empirical loss during gradient descent.
+
+3. Supervised and Unsupervised Tasks
+Supervised Learning requires Labeled Data for model training. Classification is a supervised learning task where models predict categorical class labels. Regression is a type of predictive modeling that forecasts continuous numerical values. Classification depends on Training Accuracy and F1-Score for validation benchmarking.
+
+Hyperparameter Tuning optimizes Learning Rate to stabilize convergence speed. Regularization prevents Model Overfitting on noisy training samples.

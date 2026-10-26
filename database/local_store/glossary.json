@@ -1,0 +1,902 @@
+[
+  {
+    "term": "Vector Embeddings",
+    "category": "Data & Representations",
+    "frequency": 2,
+    "definition": "Therefore, modern systems employ Vector Embeddings.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Therefore, modern systems employ Vector Embeddings.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "f0317617-6fd9-4f9f-82a2-022bc93439db"
+  },
+  {
+    "term": "modern systems",
+    "category": "Architectures & Infrastructure",
+    "frequency": 1,
+    "definition": "Therefore, modern systems employ Vector Embeddings.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Therefore, modern systems employ Vector Embeddings.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "747d8b9d-e6ac-4710-8d91-774e9ac099b5"
+  },
+  {
+    "term": "systems employ",
+    "category": "Architectures & Infrastructure",
+    "frequency": 1,
+    "definition": "Therefore, modern systems employ Vector Embeddings.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Therefore, modern systems employ Vector Embeddings.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "180ab305-6fde-425a-9e6b-afdb1d2a420d"
+  },
+  {
+    "term": "employ Vector",
+    "category": "Data & Representations",
+    "frequency": 1,
+    "definition": "Therefore, modern systems employ Vector Embeddings.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Therefore, modern systems employ Vector Embeddings.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "ffa4b939-7420-42ac-a6d0-c07ea7ccf68b"
+  },
+  {
+    "term": "Knowledge Graph",
+    "category": "Data & Representations",
+    "frequency": 3,
+    "definition": "Knowledge Graph Construction\nA Knowledge Graph is a structured network representation of real-world entities and their interrelationships represented as nodes and edges.",
+    "origin": "Document Source Text",
+    "context_sentence": "Knowledge Graph Construction\nA Knowledge Graph is a structured network representation of real-world entities and their interrelationships represented as nodes and edges.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "3ca55a7c-79d9-4691-8ec7-c1583e90ab45"
+  },
+  {
+    "term": "Transformer Architecture",
+    "category": "Models & Algorithms",
+    "frequency": 3,
+    "definition": "Deep Learning Models and Transformer Architecture\nThe Transformer Architecture is a deep neural network design based entirely on self-attention mechanisms without recurrence.",
+    "origin": "Document Source Text",
+    "context_sentence": "Deep Learning Models and Transformer Architecture\nThe Transformer Architecture is a deep neural network design based entirely on self-attention mechanisms without recurrence.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "278f4af9-4210-416b-aacb-24534ab8b663"
+  },
+  {
+    "term": "Architecture consists",
+    "category": "Architectures & Infrastructure",
+    "frequency": 1,
+    "definition": "The Transformer Architecture consists of an Encoder and a Decoder stack.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "The Transformer Architecture consists of an Encoder and a Decoder stack.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "c9af7d0a-1e08-4d25-8c66-41cfb75dcdf3"
+  },
+  {
+    "term": "consists Encoder",
+    "category": "Models & Algorithms",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'consists Encoder'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "f53b3f5d-9611-409c-a00b-44a61c3b39b4"
+  },
+  {
+    "term": "Encoder Decoder",
+    "category": "Models & Algorithms",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'Encoder Decoder'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "5f0904ba-5190-4d2d-a697-93a8ba18ffa8"
+  },
+  {
+    "term": "Decoder stack",
+    "category": "Models & Algorithms",
+    "frequency": 1,
+    "definition": "The Transformer Architecture consists of an Encoder and a Decoder stack.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "The Transformer Architecture consists of an Encoder and a Decoder stack.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "b3ada8e2-56dd-4be5-8f84-e3971718dbc7"
+  },
+  {
+    "term": "Sentence Transformers",
+    "category": "Models & Algorithms",
+    "frequency": 2,
+    "definition": "Semantic Similarity and Sentence Transformers\nSentence Transformers is a specialized framework that modifies pre-trained Transformer models using Siamese networks to derive semantically meaningful sentence embeddings.",
+    "origin": "Document Source Text",
+    "context_sentence": "Semantic Similarity and Sentence Transformers\nSentence Transformers is a specialized framework that modifies pre-trained Transformer models using Siamese networks to derive semantically meaningful sentence embeddings.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "844f1a66-3b79-4839-90da-9c58a5a0d4c2"
+  },
+  {
+    "term": "Tokenization divides",
+    "category": "Data & Representations",
+    "frequency": 1,
+    "definition": "Tokenization divides raw text into individual tokens or subwords.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Tokenization divides raw text into individual tokens or subwords.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "50d11429-c8cb-4b38-925c-40dfe2e8baf6"
+  },
+  {
+    "term": "divides raw",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "Tokenization divides raw text into individual tokens or subwords.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Tokenization divides raw text into individual tokens or subwords.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "6eb540f9-9a69-4240-bdda-689e2eb0e714"
+  },
+  {
+    "term": "raw text",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "Tokenization divides raw text into individual tokens or subwords.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Tokenization divides raw text into individual tokens or subwords.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "53718267-bf70-4b00-97e7-c40335576a79"
+  },
+  {
+    "term": "text individual",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'text individual'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "ed8b3ae4-f310-4f29-9d53-1a00c7bca0f8"
+  },
+  {
+    "term": "individual tokens",
+    "category": "Data & Representations",
+    "frequency": 1,
+    "definition": "Tokenization divides raw text into individual tokens or subwords.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Tokenization divides raw text into individual tokens or subwords.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "c6637220-6b5e-470d-b7e1-76997ba27f07"
+  },
+  {
+    "term": "tokens subwords",
+    "category": "Data & Representations",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'tokens subwords'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "c4381552-f3e5-454f-ac61-78c2461c3c59"
+  },
+  {
+    "term": "TF-IDF statistical",
+    "category": "Techniques & Methods",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'TF-IDF statistical'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "6cf0391b-26f2-4f8a-a9f1-8b9c67b55cbf"
+  },
+  {
+    "term": "statistical measure",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "TF-IDF is a statistical measure that evaluates how important a word is to a document within a collection.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "TF-IDF is a statistical measure that evaluates how important a word is to a document within a collection.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "dca38983-ce3e-4fdf-9e9c-7d0ee259c1a2"
+  },
+  {
+    "term": "measure evaluates",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'measure evaluates'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "49246783-2f8c-45ce-b086-0ca58141784b"
+  },
+  {
+    "term": "evaluates important",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'evaluates important'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "1321bb19-2dba-4a80-8716-007f4e81c1fb"
+  },
+  {
+    "term": "important word",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'important word'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "a32c16a6-252b-45ab-a511-997141be5d37"
+  },
+  {
+    "term": "word document",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'word document'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "69393aa9-b7be-4dce-9018-20a37074bd0c"
+  },
+  {
+    "term": "TF-IDF captures",
+    "category": "Techniques & Methods",
+    "frequency": 1,
+    "definition": "While TF-IDF captures lexical salience, it lacks semantic context.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "While TF-IDF captures lexical salience, it lacks semantic context.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "9ca9c8b8-fd4b-4ce5-ae4c-48781e585bdd"
+  },
+  {
+    "term": "captures lexical",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "While TF-IDF captures lexical salience, it lacks semantic context.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "While TF-IDF captures lexical salience, it lacks semantic context.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "e2ca268f-bd75-48e8-ae0a-b9418cdc6677"
+  },
+  {
+    "term": "lexical salience",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "While TF-IDF captures lexical salience, it lacks semantic context.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "While TF-IDF captures lexical salience, it lacks semantic context.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "5410cbe0-5e24-4e60-a7a8-ddfcb15d8712"
+  },
+  {
+    "term": "salience lacks",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'salience lacks'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "1d6655ad-8adb-4a1e-bbeb-c37ea95ecd4f"
+  },
+  {
+    "term": "lacks semantic",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "While TF-IDF captures lexical salience, it lacks semantic context.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "While TF-IDF captures lexical salience, it lacks semantic context.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "f3ac36f0-9b3b-4fe4-be1f-4228a271c2a5"
+  },
+  {
+    "term": "semantic context",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "While TF-IDF captures lexical salience, it lacks semantic context.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "While TF-IDF captures lexical salience, it lacks semantic context.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "fed92c4a-cbe5-485c-89e9-35d2984bd569"
+  },
+  {
+    "term": "Relationship Detection",
+    "category": "Core Concepts",
+    "frequency": 2,
+    "definition": "Relationship Detection maps semantic dependencies, taxonomies, and co-occurrences connecting extracted concepts.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Relationship Detection maps semantic dependencies, taxonomies, and co-occurrences connecting extracted concepts.",
+    "doc_id": "802caecf-c6b8-449b-a949-a9068239a4d9",
+    "_id": "e90494bb-dab6-4eb5-b275-c6d2791fd10e"
+  },
+  {
+    "term": "TF-IDF",
+    "category": "Techniques & Methods",
+    "frequency": 4,
+    "definition": "TF-IDF is a statistical measure that evaluates how important a word is to a document within a collection.",
+    "origin": "Document Source Text",
+    "context_sentence": "Feature Representation and Term Ranking\nTraditional lexical representations rely upon Term Frequency-Inverse Document Frequency (TF-IDF).",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "f18c89dc-6f6e-4553-970a-5a48c12df41b"
+  },
+  {
+    "term": "Transformer Architecture",
+    "category": "Models & Algorithms",
+    "frequency": 3,
+    "definition": "Deep Learning Models and Transformer Architecture\nThe Transformer Architecture is a deep neural network design based entirely on self-attention mechanisms without recurrence.",
+    "origin": "Document Source Text",
+    "context_sentence": "Deep Learning Models and Transformer Architecture\nThe Transformer Architecture is a deep neural network design based entirely on self-attention mechanisms without recurrence.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "b5827a96-6b57-48a5-98b9-86bdd59c89b0"
+  },
+  {
+    "term": "Vector Embeddings",
+    "category": "Data & Representations",
+    "frequency": 2,
+    "definition": "Therefore, modern systems employ Vector Embeddings.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Therefore, modern systems employ Vector Embeddings.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "66fe5fe9-c895-45df-8e43-9fa170ee94df"
+  },
+  {
+    "term": "Concept Extraction",
+    "category": "Techniques & Methods",
+    "frequency": 2,
+    "definition": "Concept Extraction identifies salient domain terms and named entities from unstructured corpora.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Concept Extraction identifies salient domain terms and named entities from unstructured corpora.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "0f89b9c9-eae0-49a8-94ce-201df0fa9a5b"
+  },
+  {
+    "term": "Relationship Detection",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "Relationship Detection maps semantic dependencies, taxonomies, and co-occurrences connecting extracted concepts.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Relationship Detection maps semantic dependencies, taxonomies, and co-occurrences connecting extracted concepts.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "bb6c2fdc-07de-4eb3-a2bf-ea3315fc2378"
+  },
+  {
+    "term": "non-informative",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "Lemmatization transforms inflected words into their root linguistic forms, while stop word removal strips non-informative grammatical noise.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Lemmatization transforms inflected words into their root linguistic forms, while stop word removal strips non-informative grammatical noise.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "2c615655-25e6-41c5-b109-3d4a01c93153"
+  },
+  {
+    "term": "similarity indicates",
+    "category": "Techniques & Methods",
+    "frequency": 1,
+    "definition": "High semantic similarity indicates strong thematic conceptual proximity between technical concepts.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "High semantic similarity indicates strong thematic conceptual proximity between technical concepts.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "411797f4-d143-44c2-ac41-8d5d420542fe"
+  },
+  {
+    "term": "Term Frequency",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "Feature Representation and Term Ranking\nTraditional lexical representations rely upon Term Frequency-Inverse Document Frequency (TF-IDF).",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Feature Representation and Term Ranking\nTraditional lexical representations rely upon Term Frequency-Inverse Document Frequency (TF-IDF).",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "8eec26ae-9bbe-4af9-9156-ebc40f72bdb9"
+  },
+  {
+    "term": "Inverse Document Frequency",
+    "category": "Architectures & Infrastructure",
+    "frequency": 1,
+    "definition": "Feature Representation and Term Ranking\nTraditional lexical representations rely upon Term Frequency-Inverse Document Frequency (TF-IDF).",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Feature Representation and Term Ranking\nTraditional lexical representations rely upon Term Frequency-Inverse Document Frequency (TF-IDF).",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "ea20c0a9-2af0-4f20-a3c1-de01190d618a"
+  },
+  {
+    "term": "Semantic Similarity",
+    "category": "Techniques & Methods",
+    "frequency": 6,
+    "definition": "Semantic Similarity and Sentence Transformers\nSentence Transformers is a specialized framework that modifies pre-trained Transformer models using Siamese networks to derive semantically meaningful sentence embeddings.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Semantic Similarity and Sentence Transformers\nSentence Transformers is a specialized framework that modifies pre-trained Transformer models using Siamese networks to derive semantically meaningful sentence embeddings.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "58bae7cf-5f61-4819-80b7-1b66f836542d"
+  },
+  {
+    "term": "Knowledge Graph",
+    "category": "Data & Representations",
+    "frequency": 3,
+    "definition": "Knowledge Graph Construction\nA Knowledge Graph is a structured network representation of real-world entities and their interrelationships represented as nodes and edges.",
+    "origin": "Document Source Text",
+    "context_sentence": "Knowledge Graph Construction\nA Knowledge Graph is a structured network representation of real-world entities and their interrelationships represented as nodes and edges.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "ecb5ab66-66f1-4aaf-9420-178dda2544d3"
+  },
+  {
+    "term": "Sentence Transformers",
+    "category": "Models & Algorithms",
+    "frequency": 2,
+    "definition": "Semantic Similarity and Sentence Transformers\nSentence Transformers is a specialized framework that modifies pre-trained Transformer models using Siamese networks to derive semantically meaningful sentence embeddings.",
+    "origin": "Document Source Text",
+    "context_sentence": "Semantic Similarity and Sentence Transformers\nSentence Transformers is a specialized framework that modifies pre-trained Transformer models using Siamese networks to derive semantically meaningful sentence embeddings.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "5680ba21-3d36-4662-b6e6-e595e064fcc9"
+  },
+  {
+    "term": "Attention Mechanism",
+    "category": "Techniques & Methods",
+    "frequency": 1,
+    "definition": "The Attention Mechanism computes dynamic alignment weights across input tokens, allowing the model to focus on distant dependencies.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "The Attention Mechanism computes dynamic alignment weights across input tokens, allowing the model to focus on distant dependencies.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "6342c1a2-7afd-4d98-b1b3-ac103853e313"
+  },
+  {
+    "term": "Mechanism computes",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "The Attention Mechanism computes dynamic alignment weights across input tokens, allowing the model to focus on distant dependencies.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "The Attention Mechanism computes dynamic alignment weights across input tokens, allowing the model to focus on distant dependencies.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "8cb8af98-153d-4245-86bc-25a44960a232"
+  },
+  {
+    "term": "allowing model",
+    "category": "Models & Algorithms",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'allowing model'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "e8c8f069-617d-41f7-98a6-ca5fb26773a3"
+  },
+  {
+    "term": "model focus",
+    "category": "Models & Algorithms",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'model focus'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "55a7e593-f29c-48ee-b52e-6bd8c0ad7eb0"
+  },
+  {
+    "term": "Processing NLP",
+    "category": "Techniques & Methods",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'Processing NLP'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "ed3ac686-b427-4605-b92b-e5e44843f49e"
+  },
+  {
+    "term": "artificial intelligence",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "Introduction and Foundations\nNatural Language Processing (NLP) is an interdisciplinary field of computer science and artificial intelligence that enables computers to understand, interpret, and manipulate human language.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Introduction and Foundations\nNatural Language Processing (NLP) is an interdisciplinary field of computer science and artificial intelligence that enables computers to understand, interpret, and manipulate human language.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "78f334bd-86a1-4467-950f-899b48fc1745"
+  },
+  {
+    "term": "Cosine Similarity",
+    "category": "Techniques & Methods",
+    "frequency": 2,
+    "definition": "Cosine Similarity measures the cosine of the angle between two embedding vectors to quantify semantic similarity.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Cosine Similarity measures the cosine of the angle between two embedding vectors to quantify semantic similarity.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "fb7a9aa6-12b0-4fe6-85be-a21c06366285"
+  },
+  {
+    "term": "angle embedding",
+    "category": "Data & Representations",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'angle embedding'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "9991c93a-2daa-4bf7-916d-e5be644c35ce"
+  },
+  {
+    "term": "embedding vectors",
+    "category": "Data & Representations",
+    "frequency": 1,
+    "definition": "Cosine Similarity measures the cosine of the angle between two embedding vectors to quantify semantic similarity.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Cosine Similarity measures the cosine of the angle between two embedding vectors to quantify semantic similarity.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "457b95a5-5dd4-4a3f-94ea-10d4c932c8d0"
+  },
+  {
+    "term": "vectors quantify",
+    "category": "Data & Representations",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'vectors quantify'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "4f237ac7-3377-401a-a37b-ce07e169f536"
+  },
+  {
+    "term": "NLP",
+    "category": "Frameworks & Tools",
+    "frequency": 3,
+    "definition": "Introduction and Foundations\nNatural Language Processing (NLP) is an interdisciplinary field of computer science and artificial intelligence that enables computers to understand, interpret, and manipulate human language.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Introduction and Foundations\nNatural Language Processing (NLP) is an interdisciplinary field of computer science and artificial intelligence that enables computers to understand, interpret, and manipulate human language.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "503b1516-763d-4611-b859-57c785aa55fb"
+  },
+  {
+    "term": "Language Processing",
+    "category": "Techniques & Methods",
+    "frequency": 2,
+    "definition": "Technical Architecture Specification: Deep Learning in Natural Language Processing\n\n1.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Technical Architecture Specification: Deep Learning in Natural Language Processing\n\n1.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "e71154f7-75c7-44f8-9771-cc3104a7ee14"
+  },
+  {
+    "term": "Natural Language Processing",
+    "category": "Techniques & Methods",
+    "frequency": 1,
+    "definition": "Technical Architecture Specification: Deep Learning in Natural Language Processing\n\n1.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Technical Architecture Specification: Deep Learning in Natural Language Processing\n\n1.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "2cec677d-3e6d-4fa9-b1c0-7430f3daf937"
+  },
+  {
+    "term": "Graph Databases",
+    "category": "Data & Representations",
+    "frequency": 2,
+    "definition": "Graph Databases such as Neo4j and analytical libraries like NetworkX provide graph construction, degree centrality calculation, and topological visualization.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Graph Databases such as Neo4j and analytical libraries like NetworkX provide graph construction, degree centrality calculation, and topological visualization.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "91491b8c-7789-4aeb-8343-8e6ce89fc0cc"
+  },
+  {
+    "term": "Databases Neo4j",
+    "category": "Data & Representations",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'Databases Neo4j'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "50f633a5-a408-4d6e-953d-f9a870b281b7"
+  },
+  {
+    "term": "like NetworkX",
+    "category": "Models & Algorithms",
+    "frequency": 1,
+    "definition": "Graph Databases such as Neo4j and analytical libraries like NetworkX provide graph construction, degree centrality calculation, and topological visualization.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Graph Databases such as Neo4j and analytical libraries like NetworkX provide graph construction, degree centrality calculation, and topological visualization.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "0b4acfa2-ad65-4d40-85de-8750b97c906c"
+  },
+  {
+    "term": "NetworkX provide",
+    "category": "Models & Algorithms",
+    "frequency": 1,
+    "definition": "Graph Databases such as Neo4j and analytical libraries like NetworkX provide graph construction, degree centrality calculation, and topological visualization.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Graph Databases such as Neo4j and analytical libraries like NetworkX provide graph construction, degree centrality calculation, and topological visualization.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "a11dccad-c3e5-499c-8bfa-5e57443faa3f"
+  },
+  {
+    "term": "provide graph",
+    "category": "Data & Representations",
+    "frequency": 1,
+    "definition": "Graph Databases such as Neo4j and analytical libraries like NetworkX provide graph construction, degree centrality calculation, and topological visualization.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Graph Databases such as Neo4j and analytical libraries like NetworkX provide graph construction, degree centrality calculation, and topological visualization.",
+    "doc_id": "c9580ebe-f335-4fa2-bebb-c469ed400870",
+    "_id": "4c080e67-7f4d-4a18-bdce-61b3f67dfcdc"
+  },
+  {
+    "term": "TF-IDF",
+    "category": "Techniques & Methods",
+    "frequency": 4,
+    "definition": "TF-IDF is a statistical measure that evaluates how important a word is to a document within a collection.",
+    "origin": "Document Source Text",
+    "context_sentence": "Feature Representation and Term Ranking\nTraditional lexical representations rely upon Term Frequency-Inverse Document Frequency (TF-IDF).",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "3794dd10-d512-46ea-9c3e-490dabf6ce9c"
+  },
+  {
+    "term": "Transformer Architecture",
+    "category": "Models & Algorithms",
+    "frequency": 3,
+    "definition": "Deep Learning Models and Transformer Architecture\nThe Transformer Architecture is a deep neural network design based entirely on self-attention mechanisms without recurrence.",
+    "origin": "Document Source Text",
+    "context_sentence": "Deep Learning Models and Transformer Architecture\nThe Transformer Architecture is a deep neural network design based entirely on self-attention mechanisms without recurrence.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "6cbe3774-1fd9-4407-86e2-ecb426c7edac"
+  },
+  {
+    "term": "Vector Embeddings",
+    "category": "Data & Representations",
+    "frequency": 2,
+    "definition": "Therefore, modern systems employ Vector Embeddings.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Therefore, modern systems employ Vector Embeddings.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "c3ef5b88-7757-48cc-9249-d8b5dd0691ec"
+  },
+  {
+    "term": "Concept Extraction",
+    "category": "Techniques & Methods",
+    "frequency": 2,
+    "definition": "Concept Extraction identifies salient domain terms and named entities from unstructured corpora.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Concept Extraction identifies salient domain terms and named entities from unstructured corpora.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "dbcb5a53-b78d-443c-8661-4405fc63a070"
+  },
+  {
+    "term": "Relationship Detection",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "Relationship Detection maps semantic dependencies, taxonomies, and co-occurrences connecting extracted concepts.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Relationship Detection maps semantic dependencies, taxonomies, and co-occurrences connecting extracted concepts.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "d2ba2019-3f43-40cd-bfc8-fe1898ecb2b5"
+  },
+  {
+    "term": "non-informative",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "Lemmatization transforms inflected words into their root linguistic forms, while stop word removal strips non-informative grammatical noise.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Lemmatization transforms inflected words into their root linguistic forms, while stop word removal strips non-informative grammatical noise.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "89d907dc-dd46-4fda-aba0-8c75c4eb5b65"
+  },
+  {
+    "term": "similarity indicates",
+    "category": "Techniques & Methods",
+    "frequency": 1,
+    "definition": "High semantic similarity indicates strong thematic conceptual proximity between technical concepts.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "High semantic similarity indicates strong thematic conceptual proximity between technical concepts.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "d5c7dfb4-bc87-41a4-8dd5-4a97bc0435be"
+  },
+  {
+    "term": "Term Frequency",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "Feature Representation and Term Ranking\nTraditional lexical representations rely upon Term Frequency-Inverse Document Frequency (TF-IDF).",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Feature Representation and Term Ranking\nTraditional lexical representations rely upon Term Frequency-Inverse Document Frequency (TF-IDF).",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "f50ff61e-19f3-4440-b3a2-c7b68021fc80"
+  },
+  {
+    "term": "Inverse Document Frequency",
+    "category": "Architectures & Infrastructure",
+    "frequency": 1,
+    "definition": "Feature Representation and Term Ranking\nTraditional lexical representations rely upon Term Frequency-Inverse Document Frequency (TF-IDF).",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Feature Representation and Term Ranking\nTraditional lexical representations rely upon Term Frequency-Inverse Document Frequency (TF-IDF).",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "1d782780-c123-4f03-a18d-15903e8eb6f9"
+  },
+  {
+    "term": "Semantic Similarity",
+    "category": "Techniques & Methods",
+    "frequency": 6,
+    "definition": "Semantic Similarity and Sentence Transformers\nSentence Transformers is a specialized framework that modifies pre-trained Transformer models using Siamese networks to derive semantically meaningful sentence embeddings.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Semantic Similarity and Sentence Transformers\nSentence Transformers is a specialized framework that modifies pre-trained Transformer models using Siamese networks to derive semantically meaningful sentence embeddings.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "668c3aa4-d091-4a38-ad2a-d8b93d81b843"
+  },
+  {
+    "term": "Knowledge Graph",
+    "category": "Data & Representations",
+    "frequency": 3,
+    "definition": "Knowledge Graph Construction\nA Knowledge Graph is a structured network representation of real-world entities and their interrelationships represented as nodes and edges.",
+    "origin": "Document Source Text",
+    "context_sentence": "Knowledge Graph Construction\nA Knowledge Graph is a structured network representation of real-world entities and their interrelationships represented as nodes and edges.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "46b8fd08-8079-4411-b712-cedf079d9369"
+  },
+  {
+    "term": "Sentence Transformers",
+    "category": "Models & Algorithms",
+    "frequency": 2,
+    "definition": "Semantic Similarity and Sentence Transformers\nSentence Transformers is a specialized framework that modifies pre-trained Transformer models using Siamese networks to derive semantically meaningful sentence embeddings.",
+    "origin": "Document Source Text",
+    "context_sentence": "Semantic Similarity and Sentence Transformers\nSentence Transformers is a specialized framework that modifies pre-trained Transformer models using Siamese networks to derive semantically meaningful sentence embeddings.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "1261b747-042a-4aef-b4ba-b39824c1c0e4"
+  },
+  {
+    "term": "Attention Mechanism",
+    "category": "Techniques & Methods",
+    "frequency": 1,
+    "definition": "The Attention Mechanism computes dynamic alignment weights across input tokens, allowing the model to focus on distant dependencies.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "The Attention Mechanism computes dynamic alignment weights across input tokens, allowing the model to focus on distant dependencies.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "446f95c5-4a15-44a6-a968-3fd5c2fd5184"
+  },
+  {
+    "term": "Mechanism computes",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "The Attention Mechanism computes dynamic alignment weights across input tokens, allowing the model to focus on distant dependencies.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "The Attention Mechanism computes dynamic alignment weights across input tokens, allowing the model to focus on distant dependencies.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "fcb8d88f-6c87-45af-8549-ae035b400ad4"
+  },
+  {
+    "term": "allowing model",
+    "category": "Models & Algorithms",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'allowing model'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "937f70b7-2fe0-4850-a485-83b258a635e5"
+  },
+  {
+    "term": "model focus",
+    "category": "Models & Algorithms",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'model focus'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "787d9292-3485-4dee-bf59-f6cffeaf20a7"
+  },
+  {
+    "term": "Processing NLP",
+    "category": "Techniques & Methods",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'Processing NLP'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "c8804585-cb3e-4142-b6b0-433cff5f3505"
+  },
+  {
+    "term": "artificial intelligence",
+    "category": "Core Concepts",
+    "frequency": 1,
+    "definition": "Introduction and Foundations\nNatural Language Processing (NLP) is an interdisciplinary field of computer science and artificial intelligence that enables computers to understand, interpret, and manipulate human language.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Introduction and Foundations\nNatural Language Processing (NLP) is an interdisciplinary field of computer science and artificial intelligence that enables computers to understand, interpret, and manipulate human language.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "c4480095-5aa8-4b80-860b-e589a6329596"
+  },
+  {
+    "term": "Cosine Similarity",
+    "category": "Techniques & Methods",
+    "frequency": 2,
+    "definition": "Cosine Similarity measures the cosine of the angle between two embedding vectors to quantify semantic similarity.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Cosine Similarity measures the cosine of the angle between two embedding vectors to quantify semantic similarity.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "5ee551a3-a560-450a-9645-186e34908d5d"
+  },
+  {
+    "term": "angle embedding",
+    "category": "Data & Representations",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'angle embedding'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "ad16bab5-06d5-415a-a79f-4509544258fa"
+  },
+  {
+    "term": "embedding vectors",
+    "category": "Data & Representations",
+    "frequency": 1,
+    "definition": "Cosine Similarity measures the cosine of the angle between two embedding vectors to quantify semantic similarity.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Cosine Similarity measures the cosine of the angle between two embedding vectors to quantify semantic similarity.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "e36df3bb-56b0-482a-bd8c-0eae8af2bc18"
+  },
+  {
+    "term": "vectors quantify",
+    "category": "Data & Representations",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'vectors quantify'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "cff8f1db-cdc7-46cd-876a-8fa65c84c73d"
+  },
+  {
+    "term": "NLP",
+    "category": "Frameworks & Tools",
+    "frequency": 3,
+    "definition": "Introduction and Foundations\nNatural Language Processing (NLP) is an interdisciplinary field of computer science and artificial intelligence that enables computers to understand, interpret, and manipulate human language.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Introduction and Foundations\nNatural Language Processing (NLP) is an interdisciplinary field of computer science and artificial intelligence that enables computers to understand, interpret, and manipulate human language.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "0aa07d31-f9ff-40f4-8e89-5e3264dffc28"
+  },
+  {
+    "term": "Language Processing",
+    "category": "Techniques & Methods",
+    "frequency": 2,
+    "definition": "Technical Architecture Specification: Deep Learning in Natural Language Processing\n\n1.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Technical Architecture Specification: Deep Learning in Natural Language Processing\n\n1.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "875be534-3273-43df-8feb-9f17825d470e"
+  },
+  {
+    "term": "Natural Language Processing",
+    "category": "Techniques & Methods",
+    "frequency": 1,
+    "definition": "Technical Architecture Specification: Deep Learning in Natural Language Processing\n\n1.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Technical Architecture Specification: Deep Learning in Natural Language Processing\n\n1.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "31562339-9af3-4c6f-ae6e-2a093f353b74"
+  },
+  {
+    "term": "Graph Databases",
+    "category": "Data & Representations",
+    "frequency": 2,
+    "definition": "Graph Databases such as Neo4j and analytical libraries like NetworkX provide graph construction, degree centrality calculation, and topological visualization.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Graph Databases such as Neo4j and analytical libraries like NetworkX provide graph construction, degree centrality calculation, and topological visualization.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "d163fbc4-ec27-4b61-8c02-9239c7bae63b"
+  },
+  {
+    "term": "Databases Neo4j",
+    "category": "Data & Representations",
+    "frequency": 1,
+    "definition": "Key technical concept mentioned in the document: 'Databases Neo4j'.",
+    "origin": "Synthesized Reference",
+    "context_sentence": "Term identified during lexical scanning.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "f941a6b5-f3d9-4d18-a79a-134facd7c9fd"
+  },
+  {
+    "term": "like NetworkX",
+    "category": "Models & Algorithms",
+    "frequency": 1,
+    "definition": "Graph Databases such as Neo4j and analytical libraries like NetworkX provide graph construction, degree centrality calculation, and topological visualization.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Graph Databases such as Neo4j and analytical libraries like NetworkX provide graph construction, degree centrality calculation, and topological visualization.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "1fa60b3c-1d84-4d35-9204-2b59ee4fc689"
+  },
+  {
+    "term": "NetworkX provide",
+    "category": "Models & Algorithms",
+    "frequency": 1,
+    "definition": "Graph Databases such as Neo4j and analytical libraries like NetworkX provide graph construction, degree centrality calculation, and topological visualization.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Graph Databases such as Neo4j and analytical libraries like NetworkX provide graph construction, degree centrality calculation, and topological visualization.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "49e1fad6-d7e3-44eb-b492-1f55eabdbc9f"
+  },
+  {
+    "term": "provide graph",
+    "category": "Data & Representations",
+    "frequency": 1,
+    "definition": "Graph Databases such as Neo4j and analytical libraries like NetworkX provide graph construction, degree centrality calculation, and topological visualization.",
+    "origin": "Contextual Excerpt",
+    "context_sentence": "Graph Databases such as Neo4j and analytical libraries like NetworkX provide graph construction, degree centrality calculation, and topological visualization.",
+    "doc_id": "779ee7e1-7f38-4b59-9680-52becfa88420",
+    "_id": "416e6037-ca6c-491b-a62b-c6e0fce900c6"
+  }
+]
